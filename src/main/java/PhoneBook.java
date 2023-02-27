@@ -12,4 +12,12 @@ public class PhoneBook {
         }
         return phoneBook.size();
     }
+
+    public static String findByName(String софия) {
+        return null;
+    }
+
+    String findByNumber(){
+        return null;
+    }
 }
