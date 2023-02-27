@@ -1,3 +1,4 @@
+import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -27,5 +28,10 @@ public class PhoneBook {
             }
         }
         return name;
+    }
+
+     static Collection<String> printAllNames(){
+        return null;
+
     }
 }

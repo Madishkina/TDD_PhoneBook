@@ -2,9 +2,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.util.Map;
-import java.util.TreeMap;
-
+import java.util.*;
 
 
 class PhoneBookTest {
@@ -43,6 +41,16 @@ class PhoneBookTest {
 
         Assertions.assertEquals(expected, actual);
         Assertions.assertNotEquals(nonExpected, actual);
+        Assertions.assertNotNull(actual);
+    }
+
+    @Test
+    void printAllNames() {
+        Collection<String> actual = PhoneBook.printAllNames();
+        Collection<String> expected = new ArrayList<>();
+        expected.add("София");
+        expected.add("Петя");
+        Assertions.assertEquals(expected, actual);
         Assertions.assertNotNull(actual);
     }
 }
