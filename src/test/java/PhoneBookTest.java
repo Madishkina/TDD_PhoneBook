@@ -38,7 +38,7 @@ class PhoneBookTest {
     @Test
     void findByName() {
         int expected = 1234567892;
-        String actual = PhoneBook.findByName("Петя");
+        int actual = PhoneBook.findByName("Петя");
         int nonExpected = 1234567891;
 
         Assertions.assertEquals(expected, actual);
