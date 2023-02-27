@@ -27,12 +27,11 @@ class PhoneBookTest {
     }
     @Test
     void findByNumber() {
-        int expected = 1234567891;
-        String actual = PhoneBook.findByName("София");
-        int nonExpected = 1234567892;
+        String expected = "София";
+        String actual = PhoneBook.findByNumber(1234567891);
+        String nonExpected = "Петя";
         Assertions.assertEquals(expected,actual);
         Assertions.assertNotEquals(nonExpected, actual);
         Assertions.assertNotNull(actual);
-
     }
 }
