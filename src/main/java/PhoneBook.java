@@ -14,7 +14,7 @@ public class PhoneBook {
         return phoneBook.size();
     }
 
-    public static String findByName(String софия) {
+    public static String findByName(String name) {
         return null;
     }
 
